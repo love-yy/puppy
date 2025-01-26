@@ -1,6 +1,10 @@
 package puppy
 
-import "github.com/love-yy/dog"
+import (
+	"fmt"
+
+	"github.com/love-yy/dog"
+)
 
 func Bark() string {
 	return "Woof!🐕‍🦺 "
@@ -16,4 +20,8 @@ func BigBark() string {
 
 func BigBarks() string {
 	return dog.WhenGrowUp(Barks())
+}
+
+func From11() {
+	fmt.Println("I'm from version v1.1.0")
 }
